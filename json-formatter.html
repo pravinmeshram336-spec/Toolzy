@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>JSON Formatter - Toolzy</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">
+<h2>🟢 Toolzy</h2>
+</div>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+<li><a href="developer-tools.html">Developer Tools</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</nav>
+
+<div class="age-container">
+
+<h1>🧩 JSON Formatter</h1>
+
+<p>Paste your JSON below.</p>
+
+<textarea
+id="jsonInput"
+rows="12"
+placeholder="Paste JSON here..."
+style="width:100%;padding:15px;border-radius:10px;"></textarea>
+
+<br><br>
+
+<button onclick="formatJSON()">
+Format JSON
+</button>
+
+<button onclick="clearJSON()">
+Clear
+</button>
+
+<button onclick="copyJSON()">
+Copy
+</button>
+
+<br><br>
+
+<textarea
+id="jsonOutput"
+rows="12"
+readonly
+placeholder="Formatted JSON..."
+style="width:100%;padding:15px;border-radius:10px;"></textarea>
+
+</div>
+
+<script src="json-formatter.js"></script>
+
+</body>
+</html>

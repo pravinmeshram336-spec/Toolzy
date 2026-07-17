@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Length Converter - Toolzy</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+<div class="logo">
+<h2>🟢 Toolzy</h2>
+</div>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="converters.html">Converters</a></li>
+</ul>
+</nav>
+
+<div class="age-container">
+
+<h1>📏 Length Converter</h1>
+
+<p>Convert Meter, Kilometer and Centimeter.</p>
+
+<input type="number" id="lengthValue" placeholder="Enter Value">
+
+<select id="lengthUnit">
+<option value="m">Meter</option>
+<option value="km">Kilometer</option>
+<option value="cm">Centimeter</option>
+</select>
+
+<button onclick="convertLength()">Convert</button>
+
+<div class="result">
+
+<h2>Result</h2>
+
+<p id="lengthResult1">-</p>
+<p id="lengthResult2">-</p>
+
+</div>
+
+</div>
+
+<script src="length-converter.js"></script>
+
+</body>
+</html>

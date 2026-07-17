@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>GST Calculator - Toolzy</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+<div class="logo">
+<h2>🟢 Toolzy</h2>
+</div>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="calculators.html">Calculators</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+
+</nav>
+
+<div class="age-container">
+
+<h1>💰 GST Calculator</h1>
+
+<p>Enter Amount and GST Rate</p>
+
+<input type="number" id="amount" placeholder="Enter Amount">
+
+<select id="gstRate">
+
+<option value="3">3% GST</option>
+<option value="5">5% GST</option>
+<option value="12">12% GST</option>
+<option value="18" selected>18% GST</option>
+<option value="28">28% GST</option>
+
+</select>
+
+<button id="addGST">Add GST</button>
+
+<button id="removeGST">Remove GST</button>
+
+<div class="result">
+
+<h2>Result</h2>
+
+<p id="gstAmount">GST Amount : --</p>
+
+<p id="finalAmount">Final Amount : --</p>
+
+</div>
+
+<button id="resetBtn">Reset</button>
+
+</div>
+
+<script src="gst-calculator.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Base64 Encoder - Toolzy</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">
+<h2>🟢 Toolzy</h2>
+</div>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="developer-tools.html">Developer Tools</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+
+</nav>
+
+<div class="age-container">
+
+<h1>🔐 Base64 Encoder</h1>
+
+<p>Enter text to encode</p>
+
+<textarea id="inputText" rows="8" placeholder="Enter text..." style="width:100%;padding:15px;border-radius:10px;"></textarea>
+
+<br><br>
+
+<button onclick="encodeText()">Encode</button>
+
+<button onclick="clearText()">Clear</button>
+
+<button onclick="copyText()">Copy</button>
+
+<br><br>
+
+<textarea id="outputText" rows="8" readonly placeholder="Encoded text..." style="width:100%;padding:15px;border-radius:10px;"></textarea>
+
+</div>
+
+<script src="base64-encoder.js"></script>
+
+</body>
+</html>

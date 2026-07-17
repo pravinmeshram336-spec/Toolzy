@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Compressor - Toolzy</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+<div class="logo">
+<h2>🟢 Toolzy</h2>
+</div>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="image-tools.html">Image Tools</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
+<div class="age-container">
+
+<h1>🗜️ Image Compressor</h1>
+
+<p>Select an image and choose quality.</p>
+
+<input type="file" id="imageInput" accept="image/*">
+
+<input type="range" id="quality" min="10" max="100" value="80">
+
+<p>Quality: <span id="qualityValue">80</span>%</p>
+
+<button onclick="compressImage()">Compress Image</button>
+
+<canvas id="canvas" style="display:none;"></canvas>
+
+<div class="result">
+
+<h2>Compressed Image</h2>
+
+<img id="preview" style="max-width:100%;display:none;border-radius:10px;">
+
+<br><br>
+
+<a id="downloadBtn" download="compressed-image.jpg" style="display:none;">
+<button>Download Image</button>
+</a>
+
+</div>
+
+</div>
+
+<script src="image-compressor.js"></script>
+
+</body>
+</html>

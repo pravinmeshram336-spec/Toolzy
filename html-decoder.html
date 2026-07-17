@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>HTML Decoder - Toolzy</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">
+<h2>🟢 Toolzy</h2>
+</div>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="developer-tools.html">Developer Tools</a></li>
+</ul>
+
+</nav>
+
+<div class="age-container">
+
+<h1>HTML Decoder</h1>
+
+<p>Convert HTML Entities into Normal Text.</p>
+
+<textarea id="inputText" rows="8" placeholder="Paste Encoded HTML here..."></textarea>
+
+<button onclick="decodeHTML()">
+Decode HTML
+</button>
+
+<div class="result">
+
+<h2>Decoded Result</h2>
+
+<textarea id="outputText" rows="8" readonly></textarea>
+
+</div>
+
+</div>
+
+<script src="html-decoder.js"></script>
+
+</body>
+
+</html>

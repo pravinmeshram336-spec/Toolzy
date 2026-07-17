@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Hash Generator - Toolzy</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">
+<h2>🟢 Toolzy</h2>
+</div>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="developer-tools.html">Developer Tools</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+
+</nav>
+
+<div class="age-container">
+
+<h1>#️⃣ SHA-256 Hash Generator</h1>
+
+<p>Enter text below</p>
+
+<textarea
+id="inputText"
+rows="6"
+placeholder="Enter text..."
+style="width:100%;padding:15px;border-radius:10px;"></textarea>
+
+<br><br>
+
+<button onclick="generateHash()">
+Generate Hash
+</button>
+
+<button onclick="copyHash()">
+Copy
+</button>
+
+<br><br>
+
+<textarea
+id="outputHash"
+rows="5"
+readonly
+style="width:100%;padding:15px;border-radius:10px;"></textarea>
+
+</div>
+
+<script src="hash-generator.js"></script>
+
+</body>
+</html>

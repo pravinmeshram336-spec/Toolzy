@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>JWT Decoder - Toolzy</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">
+<h2>🟢 Toolzy</h2>
+</div>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="developer-tools.html">Developer Tools</a></li>
+</ul>
+
+</nav>
+
+<div class="age-container">
+
+<h1>JWT Decoder</h1>
+
+<p>Paste your JWT Token below.</p>
+
+<textarea id="jwtInput" rows="8" placeholder="Paste JWT Token..."></textarea>
+
+<button onclick="decodeJWT()">
+Decode JWT
+</button>
+
+<div class="result">
+
+<h2>Payload</h2>
+
+<textarea id="jwtOutput" rows="10" readonly></textarea>
+
+</div>
+
+</div>
+
+<script src="jwt-decoder.js"></script>
+
+</body>
+</html>

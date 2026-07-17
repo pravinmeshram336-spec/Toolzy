@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>FD Calculator - Toolzy</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">
+<h2>🟢 Toolzy</h2>
+</div>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="calculators.html">Calculators</a></li>
+</ul>
+
+</nav>
+
+<div class="age-container">
+
+<h1>🏛️ FD Calculator</h1>
+
+<p>Calculate your Fixed Deposit maturity amount instantly.</p>
+
+<input type="number" id="principal" placeholder="Deposit Amount (₹)">
+
+<input type="number" id="rate" placeholder="Annual Interest Rate (%)">
+
+<input type="number" id="years" placeholder="Time Period (Years)">
+
+<button onclick="calculateFD()">
+Calculate FD
+</button>
+
+<div class="result">
+
+<h2>Result</h2>
+
+<p id="investedAmount">Deposit Amount : ₹0</p>
+
+<p id="interestEarned">Interest Earned : ₹0</p>
+
+<p id="maturityAmount">Maturity Amount : ₹0</p>
+
+</div>
+
+</div>
+
+<script src="fd-calculator.js"></script>
+
+</body>
+</html>
