@@ -1,0 +1,462 @@
+/* ===========================
+   TOOLZY - PART 1
+   Global + Navbar + Hero
+=========================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0b0b0b;
+color:#fff;
+font-family:'Poppins',sans-serif;
+overflow-x:hidden;
+}
+
+/* Navbar */
+
+nav{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:70px;
+background:#111;
+border-bottom:1px solid #00ff99;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:0 60px;
+z-index:999;
+}
+
+.logo h2{
+color:#00ff99;
+font-size:30px;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:30px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+font-size:17px;
+transition:.3s;
+}
+
+nav ul li a:hover{
+color:#00ff99;
+}
+
+/* Hero */
+
+.hero{
+margin-top:70px;
+min-height:65vh;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:30px 60px;
+gap:40px;
+}
+
+.left{
+flex:1;
+}
+
+.left h1{
+font-size:62px;
+line-height:1.2;
+font-weight:700;
+}
+
+.left span{
+color:#00ff99;
+}
+
+.left p{
+margin-top:20px;
+font-size:20px;
+color:#bbb;
+line-height:1.7;
+max-width:550px;
+}
+
+/* Search */
+
+.search-box{
+display:flex;
+margin-top:35px;
+max-width:500px;
+}
+
+.search-box input{
+flex:1;
+padding:16px;
+font-size:18px;
+border:none;
+outline:none;
+border-radius:12px 0 0 12px;
+background:#1b1b1b;
+color:white;
+}
+
+.search-box button{
+width:75px;
+border:none;
+background:#00ff99;
+font-size:22px;
+cursor:pointer;
+border-radius:0 12px 12px 0;
+transition:.3s;
+}
+
+.search-box button:hover{
+background:#00d67f;
+}
+
+/* Right */
+
+.right{
+flex:1;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+/* ===========================
+   TOOLZY - PART 2
+   Tool Box + Categories
+=========================== */
+
+/* Tool Box */
+
+.tool-box{
+width:210px;
+height:210px;
+background:#141414;
+border:2px solid #00ff99;
+border-radius:25px;
+display:flex;
+justify-content:center;
+align-items:center;
+position:relative;
+text-decoration:none;
+color:white;
+box-shadow:0 0 18px rgba(0,255,153,.25);
+transition:.3s;
+}
+
+.tool-box:hover{
+transform:translateY(-8px) scale(1.03);
+box-shadow:0 0 35px rgba(0,255,153,.6);
+}
+
+.tool-icon{
+font-size:85px;
+filter:drop-shadow(0 0 15px #00ff99);
+}
+
+/* Floating Icons */
+
+.floating{
+position:absolute;
+font-size:32px;
+animation:float 3s ease-in-out infinite;
+}
+
+.calc{
+top:18px;
+left:20px;
+}
+
+.code{
+top:18px;
+right:20px;
+}
+
+.image{
+bottom:18px;
+left:20px;
+}
+
+.pdf{
+bottom:18px;
+right:20px;
+}
+
+.tool{
+right:-15px;
+top:50%;
+transform:translateY(-50%);
+}
+
+@keyframes float{
+
+0%{
+transform:translateY(0px);
+}
+
+50%{
+transform:translateY(-8px);
+}
+
+100%{
+transform:translateY(0px);
+}
+
+}
+
+/* Categories */
+
+.categories{
+padding:10px 60px 50px;
+}
+
+.categories h2{
+font-size:36px;
+margin-bottom:35px;
+text-align:center;
+}
+
+/* Grid */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+/* Cards */
+
+.card{
+background:#161616;
+border:1px solid #00ff99;
+border-radius:18px;
+padding:35px;
+text-align:center;
+font-size:24px;
+color:white;
+text-decoration:none;
+cursor:pointer;
+transition:.3s;
+box-shadow:0 0 10px rgba(0,255,153,.12);
+}
+
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 0 25px rgba(0,255,153,.45);
+color:white;
+}
+
+/* ===========================
+   TOOLZY - PART 3
+   Calculator Pages
+=========================== */
+
+.age-container{
+width:500px;
+max-width:95%;
+margin:130px auto;
+background:#151515;
+padding:35px;
+border-radius:20px;
+border:2px solid #00ff99;
+box-shadow:0 0 25px rgba(0,255,153,.25);
+text-align:center;
+}
+
+.age-container h1{
+font-size:38px;
+color:#00ff99;
+margin-bottom:15px;
+}
+
+.age-container p{
+color:#bbb;
+margin-bottom:20px;
+}
+
+.age-container input,
+.age-container select{
+width:100%;
+padding:15px;
+margin-bottom:20px;
+background:#202020;
+border:1px solid #333;
+border-radius:10px;
+color:white;
+font-size:18px;
+outline:none;
+}
+
+.age-container input:focus,
+.age-container select:focus{
+border-color:#00ff99;
+}
+
+.age-container button{
+width:100%;
+padding:15px;
+margin-top:10px;
+border:none;
+border-radius:10px;
+background:#00ff99;
+color:#111;
+font-size:18px;
+font-weight:bold;
+cursor:pointer;
+transition:.3s;
+}
+
+.age-container button:hover{
+background:#00dd88;
+transform:translateY(-3px);
+}
+
+.result{
+margin-top:25px;
+padding:20px;
+background:#1b1b1b;
+border-radius:15px;
+border:1px solid #00ff99;
+}
+
+.result h2{
+color:#00ff99;
+margin-bottom:15px;
+}
+
+.result p{
+font-size:20px;
+margin:10px 0;
+color:white;
+}
+
+/* ===========================
+   TOOLZY - PART 4
+   Footer + Responsive
+=========================== */
+
+footer{
+margin-top:80px;
+padding:30px;
+text-align:center;
+background:#111;
+border-top:1px solid #00ff99;
+color:#aaa;
+}
+
+/* Mobile */
+
+@media(max-width:992px){
+
+.hero{
+flex-direction:column;
+text-align:center;
+padding:40px 20px;
+}
+
+.left{
+width:100%;
+}
+
+.right{
+width:100%;
+margin-top:40px;
+}
+
+.left h1{
+font-size:42px;
+}
+
+.search-box{
+max-width:100%;
+}
+
+.grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+nav{
+padding:0 20px;
+}
+
+nav ul{
+gap:15px;
+}
+
+}
+
+@media(max-width:600px){
+
+nav{
+flex-direction:column;
+height:auto;
+padding:15px;
+}
+
+nav ul{
+margin-top:15px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.hero{
+margin-top:120px;
+}
+
+.left h1{
+font-size:34px;
+}
+
+.left p{
+font-size:17px;
+}
+
+.search-box{
+flex-direction:column;
+}
+
+.search-box input{
+width:100%;
+border-radius:10px;
+}
+
+.search-box button{
+width:100%;
+margin-top:10px;
+border-radius:10px;
+padding:15px;
+}
+
+.grid{
+grid-template-columns:1fr;
+}
+
+.tool-box{
+width:240px;
+height:240px;
+}
+
+.tool-icon{
+font-size:70px;
+}
+
+.floating{
+font-size:24px;
+}
+
+.age-container{
+padding:25px;
+}
+
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PNG to JPG - Toolzy</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+<div class="logo"><h2>🟢 Toolzy</h2></div>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="image-tools.html">Image Tools</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
+<div class="age-container">
+
+<h1>🖼️ PNG to JPG</h1>
+
+<input type="file" id="imageInput" accept=".png,image/png">
+
+<button onclick="convertToJPG()">Convert to JPG</button>
+
+<canvas id="canvas" style="display:none;"></canvas>
+
+<div class="result">
+
+<h2>Preview</h2>
+
+<img id="preview" style="display:none;max-width:100%;border-radius:10px;">
+
+<br><br>
+
+<a id="downloadBtn" download="converted.jpg" style="display:none;">
+<button>Download JPG</button>
+</a>
+
+</div>
+
+</div>
+
+<script src="png-to-jpg.js"></script>
+
+</body>
+</html>

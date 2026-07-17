@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weight Converter - Toolzy</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+<div class="logo">
+<h2>🟢 Toolzy</h2>
+</div>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="converters.html">Converters</a></li>
+</ul>
+</nav>
+
+<div class="age-container">
+
+<h1>⚖️ Weight Converter</h1>
+
+<p>Convert Kilogram, Gram and Pound.</p>
+
+<input type="number" id="weightValue" placeholder="Enter Weight">
+
+<select id="weightUnit">
+<option value="kg">Kilogram</option>
+<option value="g">Gram</option>
+<option value="lb">Pound</option>
+</select>
+
+<button onclick="convertWeight()">
+Convert
+</button>
+
+<div class="result">
+
+<h2>Result</h2>
+
+<p id="weightResult1">-</p>
+<p id="weightResult2">-</p>
+
+</div>
+
+</div>
+
+<script src="weight-converter.js"></script>
+
+</body>
+</html>

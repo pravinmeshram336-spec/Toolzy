@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SIP Calculator - Toolzy</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">
+<h2>🟢 Toolzy</h2>
+</div>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="calculators.html">Calculators</a></li>
+</ul>
+
+</nav>
+
+<div class="age-container">
+
+<h1>🏦 SIP Calculator</h1>
+
+<p>Calculate your SIP maturity amount instantly.</p>
+
+<input type="number" id="monthlyInvestment" placeholder="Monthly Investment (₹)">
+
+<input type="number" id="annualRate" placeholder="Expected Annual Return (%)">
+
+<input type="number" id="years" placeholder="Investment Period (Years)">
+
+<button onclick="calculateSIP()">
+Calculate SIP
+</button>
+
+<div class="result">
+
+<h2>Result</h2>
+
+<p id="totalInvestment">Total Investment : ₹0</p>
+
+<p id="estimatedReturns">Estimated Returns : ₹0</p>
+
+<p id="maturityValue">Maturity Value : ₹0</p>
+
+</div>
+
+</div>
+
+<script src="sip-calculator.js"></script>
+
+</body>
+
+</html>

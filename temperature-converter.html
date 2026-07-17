@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Temperature Converter - Toolzy</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+<div class="logo">
+<h2>🟢 Toolzy</h2>
+</div>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="converters.html">Converters</a></li>
+</ul>
+</nav>
+
+<div class="age-container">
+
+<h1>🌡️ Temperature Converter</h1>
+
+<p>Convert Celsius, Fahrenheit and Kelvin.</p>
+
+<input type="number" id="tempValue" placeholder="Enter Temperature">
+
+<select id="tempUnit">
+<option value="C">Celsius</option>
+<option value="F">Fahrenheit</option>
+<option value="K">Kelvin</option>
+</select>
+
+<button onclick="convertTemperature()">
+Convert
+</button>
+
+<div class="result">
+<h2>Result</h2>
+
+<p id="result1">-</p>
+<p id="result2">-</p>
+
+</div>
+
+</div>
+
+<script src="temperature-converter.js"></script>
+
+</body>
+</html>

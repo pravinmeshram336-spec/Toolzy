@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Rotate PDF - Toolzy</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://unpkg.com/pdf-lib/dist/pdf-lib.min.js"></script>
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">
+<h2>🟢 Toolzy</h2>
+</div>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="pdf-tools.html">PDF Tools</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+
+</nav>
+
+<div class="age-container">
+
+<h1>🔄 Rotate PDF</h1>
+
+<p>Select a PDF and choose rotation angle.</p>
+
+<input type="file" id="pdfInput" accept=".pdf">
+
+<select id="angle">
+<option value="90">90°</option>
+<option value="180">180°</option>
+<option value="270">270°</option>
+</select>
+
+<button onclick="rotatePDF()">
+Rotate PDF
+</button>
+
+<div class="result">
+
+<h2>Download</h2>
+
+<a id="download" style="display:none;">
+<button>
+Download Rotated PDF
+</button>
+</a>
+
+</div>
+
+</div>
+
+<script src="rotate-pdf.js"></script>
+
+</body>
+</html>

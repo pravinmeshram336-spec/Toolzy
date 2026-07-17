@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>PNG to PDF - Toolzy</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">
+<h2>🟢 Toolzy</h2>
+</div>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="pdf-tools.html">PDF Tools</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+
+</nav>
+
+<div class="age-container">
+
+<h1>🖼️ PNG to PDF</h1>
+
+<p>Select one or more PNG images</p>
+
+<input type="file"
+id="imageInput"
+accept=".png,image/png"
+multiple>
+
+<button onclick="convertPDF()">
+
+Convert to PDF
+
+</button>
+
+<div class="result">
+
+<h2>Preview</h2>
+
+<div id="images"></div>
+
+</div>
+
+</div>
+
+<script src="png-to-pdf.js"></script>
+
+</body>
+</html>
