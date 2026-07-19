@@ -40,7 +40,7 @@ const download=document.getElementById("download");
 
 download.href=url;
 
-download.download="Rotated-Toolzy.pdf";
+download.download="Rotated-Nexamona.pdf";
 
 download.style.display="inline-block";
 

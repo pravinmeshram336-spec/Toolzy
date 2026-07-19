@@ -1,5 +1,5 @@
 /* ===========================
-   TOOLZY - PART 1
+   Nexamona - PART 1
    Global + Navbar + Hero
 =========================== */
 
@@ -32,6 +32,17 @@ justify-content:space-between;
 align-items:center;
 padding:0 60px;
 z-index:999;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img{
+    width: 42px;
+    height: 42px;
 }
 
 .logo h2{
@@ -133,7 +144,7 @@ align-items:center;
 }
 
 /* ===========================
-   TOOLZY - PART 2
+   Nexamona - PART 2
    Tool Box + Categories
 =========================== */
 
@@ -258,7 +269,7 @@ color:white;
 }
 
 /* ===========================
-   TOOLZY - PART 3
+   Nexamona - PART 3
    Calculator Pages
 =========================== */
 
@@ -342,7 +353,7 @@ color:white;
 }
 
 /* ===========================
-   TOOLZY - PART 4
+   Nexamona - PART 4
    Footer + Responsive
 =========================== */
 

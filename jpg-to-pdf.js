@@ -83,6 +83,6 @@ pdf.addImage(dataURL,"JPEG",10,10,190,270);
 
 }
 
-pdf.save("Toolzy-JPG-to-PDF.pdf");
+pdf.save("Nexamona-JPG-to-PDF.pdf");
 
 }

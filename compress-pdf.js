@@ -36,7 +36,7 @@ const download=document.getElementById("download");
 
 download.href=url;
 
-download.download="Compressed-Toolzy.pdf";
+download.download="Compressed-Nexamona.pdf";
 
 download.style.display="inline-block";
 

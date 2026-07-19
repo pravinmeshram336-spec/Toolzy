@@ -41,7 +41,7 @@ const download = document.getElementById("download");
 
 download.href = url;
 
-download.download = "Merged-Toolzy.pdf";
+download.download = "Merged-Nexamona.pdf";
 
 download.style.display = "inline-block";
 
